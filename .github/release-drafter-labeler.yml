@@ -1,0 +1,17 @@
+autolabeler:
+  - label: "feat"
+    branch:
+      - '/^feature\/.+/'
+  - label: "fix"
+    branch:
+      - '/^fix\/.+/'
+  - label: "hotfix"
+    branch:
+      - '/^hotfix\/.+/'
+  - label: "maintenance"
+    branch:
+      - '/^dependabot\/.+/'
+  - label: "skip-changelog"
+    branch:
+      - "/^develop$/"
+      - "/^acceptance$/"

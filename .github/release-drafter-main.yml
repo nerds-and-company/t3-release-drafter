@@ -1,0 +1,38 @@
+name-template: "$RESOLVED_VERSION"
+tag-template: "$RESOLVED_VERSION"
+
+categories:
+  - title: "Features"
+    labels:
+      - "feat"
+  - title: "Bug Fixes"
+    labels:
+      - "fix"
+  - title: "Hotfixes"
+    labels:
+      - "hotfix"
+  - title: "Maintenance"
+    labels:
+      - "maintenance"
+
+exclude-labels:
+  - "skip-changelog"
+
+version-resolver:
+  major:
+    labels:
+      - "major"
+  minor:
+    labels:
+      - "feat"
+  patch:
+    labels:
+      - "fix"
+      - "hotfix"
+      - "maintenance"
+  default: patch
+
+template: |
+  # Changes
+
+  $CHANGES
